@@ -1,4 +1,4 @@
-arr=list(map(int,input().split()))
+arr=list(map(int,input("Enter array of integers:").split()))
 arr.sort(reverse=True)
 target=int(input("Enter target:"))
 left=0
