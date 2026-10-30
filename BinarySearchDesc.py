@@ -1,4 +1,5 @@
 arr=list(map(int,input().split()))
+arr.sort(reverse=True)
 target=int(input("Enter target:"))
 left=0
 right=len(arr)-1
