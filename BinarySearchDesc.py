@@ -1,5 +1,6 @@
 arr=list(map(int,input("Enter array of integers:").split()))
 arr.sort(reverse=True)
+print("Array after sorting:",arr)
 target=int(input("Enter target:"))
 left=0
 right=len(arr)-1
@@ -13,4 +14,7 @@ while left <= right:
         right=mid-1
     else:
         left=mid+1
-print(result)
+if result!=-1:
+    print("Target found at index:",result)
+else:
+    print("Target not found in the array.")
